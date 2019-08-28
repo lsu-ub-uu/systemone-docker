@@ -9,4 +9,6 @@
 		override="false" />
 	<Parameter name="theRestPublicPathToSystem" value="/systemone/rest/"
 		override="false" />
+	
+	<Parameter name="storageType" value="memory" override="false" />
 </Context>
