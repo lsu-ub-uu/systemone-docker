@@ -46,7 +46,7 @@
 		<developerConnection>scm:git:https://github.com/lsu-ub-uu/systemone-docker.git</developerConnection>
 		<url>https://github.com/lsu-ub-uu/systemone-docker.git</url>
 	</scm>
-
+ 
 	<dependencies>
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
