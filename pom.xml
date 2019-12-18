@@ -38,7 +38,7 @@
 		<cora-metadata.version>0.2-SNAPSHOT</cora-metadata.version>
 		<systemone-metadata.version>0.2-SNAPSHOT</systemone-metadata.version>
 
-		<systemone.version>4.1.0</systemone.version>
+		<systemone.version>4.4.0</systemone.version>
 	</properties>
 
 	<scm>
