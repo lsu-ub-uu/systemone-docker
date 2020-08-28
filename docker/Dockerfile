@@ -1,5 +1,4 @@
-FROM tomcat:9.0.37-jdk14-openjdk-buster
-COPY /server.xml /usr/local/tomcat/conf/
+FROM cora-docker-tomcat:1.0-SNAPSHOT
 
 COPY /storagefiles /mnt/data/basicstorage
 
@@ -7,7 +6,7 @@ COPY /systemone*.war /usr/local/tomcat/webapps/systemone.war
 COPY /systemone.xml /usr/local/tomcat/conf/Catalina/localhost/systemone.xml 
 
 #COPY /*.jar /usr/local/tomcat/lib/
-COPY /*.properties /usr/local/tomcat/lib/
+#COPY /*.properties /usr/local/tomcat/lib/
 
 #build with:
 #maven build
