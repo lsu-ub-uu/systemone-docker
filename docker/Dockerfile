@@ -1,4 +1,5 @@
-FROM cora-docker-tomcat:1.0-SNAPSHOT
+ARG CORA_DOCKER_VERSION
+FROM cora-docker-tomcat:${CORA_DOCKER_VERSION}
 
 COPY /storagefiles /mnt/data/basicstorage
 
