@@ -38,10 +38,10 @@
 
 		<cora-docker-tomcat.version>2.0.0</cora-docker-tomcat.version>
 		
-		<cora-metadata.version>0.5-SNAPSHOT</cora-metadata.version>
+		<cora-metadata.version>0.6-SNAPSHOT</cora-metadata.version>
 		<systemone-metadata.version>0.3-SNAPSHOT</systemone-metadata.version>
 
-		<systemone.version>6.1-SNAPSHOT</systemone.version>
+		<systemone.version>6.2-SNAPSHOT</systemone.version>
 	</properties>
 
 	<scm>
