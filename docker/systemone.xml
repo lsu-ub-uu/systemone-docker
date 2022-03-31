@@ -9,6 +9,7 @@
 		override="false" />
 	<Parameter name="theRestPublicPathToSystem" value="/systemone/rest/"
 		override="false" />
+	<Parameter name="fedoraArchiveURL" value="http://systemone-docker-fedora:8080/fcrepo/rest/" override="false" />
 	
 	<Parameter name="storageType" value="memory" override="false" />
 </Context>
