@@ -16,6 +16,10 @@
 		value="http://systemone-docker-fedora:8080/fcrepo/rest/"
 		override="false" />
 
+	<Parameter name="storageOnDiskBasePath"
+		value="/mnt/data/basicstorage/" override="false" />
+	<Parameter name="storageType" value="memory" override="false" />
+
 	<Parameter name="coraDatabaseLookupName"
 		value="java:/comp/env/jdbc/postgres" override="false" />
 	<Resource name="jdbc/postgres" auth="Container"
