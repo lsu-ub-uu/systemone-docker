@@ -1,25 +1,32 @@
 <Context>
 	<Parameter name="dependencyProviderClassName"
-		value="se.uu.ub.cora.therest.initialize.TheRestDependencyProvider" override="false" />
-
-	<Parameter name="storageOnDiskBasePath" value="/mnt/data/basicstorage/" override="false" />
-	
-	<Parameter name="theRestPublicPathToSystem" value="/systemone/rest/" override="false" />
-
-	<Parameter name="gatekeeperURL" value="http://gatekeeper:8080/gatekeeperserver/"
+		value="se.uu.ub.cora.therest.initialize.TheRestDependencyProvider"
 		override="false" />
 
-	<Parameter name="coraDatabaseLookupName" value="java:/comp/env/jdbc/postgres"
-		override="false" />
-	<Resource name="jdbc/postgres" auth="Container" type="javax.sql.DataSource"
-		driverClassName="org.postgresql.Driver"
-		url="jdbc:postgresql://systemone-docker-postgresql:5432/systemone" username="systemone"
-		password="systemone" maxTotal="20000" maxIdle="10" maxWaitMillis="-1" />
+	<Parameter name="gatekeeperURL"
+		value="http://gatekeeper:8080/gatekeeperserver/" override="false" />
 
-	<Parameter name="solrURL" value="http://solr:8983/solr/coracore" override="false" />
+	<Parameter name="solrURL"
+		value="http://solr:8983/solr/coracore" override="false" />
+
+	<Parameter name="theRestPublicPathToSystem"
+		value="/systemone/rest/" override="false" />
 
 	<Parameter name="fedoraArchiveURL"
-		value="http://systemone-docker-fedora:8080/fcrepo/rest/" override="false" />
+		value="http://systemone-docker-fedora:8080/fcrepo/rest/"
+		override="false" />
+
+	<Parameter name="storageOnDiskBasePath"
+		value="/mnt/data/basicstorage/" override="false" />
+	<Parameter name="storageType" value="memory" override="false" />
+
+	<Parameter name="coraDatabaseLookupName"
+		value="java:/comp/env/jdbc/postgres" override="false" />
+	<Resource name="jdbc/postgres" auth="Container"
+		type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
+		url="jdbc:postgresql://systemone-docker-postgresql:5432/systemone"
+		username="systemone" password="systemone" maxTotal="20000"
+		maxIdle="10" maxWaitMillis="-1" />
 </Context>
 
 
