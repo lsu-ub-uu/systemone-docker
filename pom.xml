@@ -24,7 +24,7 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent</artifactId>
-		<version>2.3.0</version>
+		<version>2.4.0</version>
 	</parent>
 
 	<artifactId>systemone-docker</artifactId>
@@ -38,10 +38,10 @@
 
 		<cora-docker-tomcat.version>2.2.0</cora-docker-tomcat.version>
 		
-		<cora-metadata.version>1.1-SNAPSHOT</cora-metadata.version>
-		<systemone-metadata.version>1.1-SNAPSHOT</systemone-metadata.version>
+		<cora-metadata.version>1.2-SNAPSHOT</cora-metadata.version>
+		<systemone-metadata.version>1.2-SNAPSHOT</systemone-metadata.version>
 
-		<systemone.version>7.3-SNAPSHOT</systemone.version>
+		<systemone.version>7.4-SNAPSHOT</systemone.version>
 	</properties>
 
 	<scm>
