@@ -33,15 +33,11 @@
 	<name>SystemOne REST docker</name>
 
 	<properties>
+		<cora-docker-tomcat.version>2.2.0</cora-docker-tomcat.version>
+		<systemone.version>7.4-SNAPSHOT</systemone.version>
+		
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 		<exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
-
-		<cora-docker-tomcat.version>2.2.0</cora-docker-tomcat.version>
-		
-		<cora-metadata.version>1.2-SNAPSHOT</cora-metadata.version>
-		<systemone-metadata.version>1.2-SNAPSHOT</systemone-metadata.version>
-
-		<systemone.version>7.4-SNAPSHOT</systemone.version>
 	</properties>
 
 	<scm>
@@ -58,19 +54,6 @@
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>cora-metadata</artifactId>
-			<version>${cora-metadata.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>systemone-metadata</artifactId>
-			<version>${systemone-metadata.version}</version>
-			<scope>compile</scope>
-		</dependency>
-
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
 			<artifactId>systemone</artifactId>
@@ -115,37 +98,9 @@
 						</goals>
 						<configuration>
 							<outputDirectory>${outputDirectory}</outputDirectory>
-							<excludeArtifactIds>cora-metadata, alvin-metadata,
-								systemone-metadata</excludeArtifactIds>
 							<overWriteReleases>true</overWriteReleases>
 							<overWriteSnapshots>true</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>
-						</configuration>
-					</execution>
-					<execution>
-						<id>unpack</id>
-						<phase>package</phase>
-						<goals>
-							<goal>unpack</goal>
-						</goals>
-						<configuration>
-							<artifactItems>
-								<artifactItem>
-									<groupId>se.uu.ub.cora</groupId>
-									<artifactId>cora-metadata</artifactId>
-									<version>${cora-metadata.version}</version>
-								</artifactItem>
-								<artifactItem>
-									<groupId>se.uu.ub.cora</groupId>
-									<artifactId>systemone-metadata</artifactId>
-									<version>${systemone-metadata.version}</version>
-								</artifactItem>
-							</artifactItems>
-							<includes>**/*.json*</includes>
-							<outputDirectory>${outputDirectory}</outputDirectory>
-							<overWrite>true</overWrite>
-							<overWriteReleases>true</overWriteReleases>
-							<overWriteSnapshots>true</overWriteSnapshots>
 						</configuration>
 					</execution>
 				</executions>
