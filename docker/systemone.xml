@@ -3,7 +3,7 @@
 		value="se.uu.ub.cora.therest.initialize.TheRestDependencyProvider" override="false" />
 
 	<Parameter name="storageOnDiskBasePath" value="/mnt/data/basicstorage/" override="false" />
-	
+
 	<Parameter name="theRestPublicPathToSystem" value="/systemone/rest/" override="false" />
 
 	<Parameter name="gatekeeperURL" value="http://gatekeeper:8080/gatekeeperserver/"
@@ -18,6 +18,12 @@
 
 	<Parameter name="solrURL" value="http://solr:8983/solr/coracore" override="false" />
 
-	<Parameter name="fedoraArchiveURL"
-		value="http://systemone-fedora:8080/fcrepo/rest/" override="false" />
+	<Parameter name="fedoraArchiveURL" value="http://systemone-fedora:8080/fcrepo/rest/"
+		override="false" />
+
+	<Parameter name="rabbitMqHostname" value="systemone-rabbitmq" override="false" />
+	<Parameter name="rabbitMqPort" value="5672" override="false" />
+	<Parameter name="rabbitMqVirtualHost" value="/" override="false" />
+	<Parameter name="rabbitMqExchange" value="converterExchange" override="false" />
+	<Parameter name="rabbitMqRoutingKey" value="" override="false" />
 </Context>
