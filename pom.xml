@@ -33,7 +33,7 @@
 	<name>SystemOne REST docker</name>
 
 	<properties>
-		<cora-docker-tomcat.version>2.2.0</cora-docker-tomcat.version>
+		<cora-docker-tomcat.version>2.4-SNAPSHOT</cora-docker-tomcat.version>
 		<systemone.version>8.17-SNAPSHOT</systemone.version>
 		
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
