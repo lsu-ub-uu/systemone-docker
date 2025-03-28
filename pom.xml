@@ -24,7 +24,7 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent-docker</artifactId>
-		<version>1.0.0</version>
+		<version>1.1.0</version>
 	</parent>
 
 	<artifactId>systemone-docker</artifactId>
@@ -33,7 +33,7 @@
 	<name>SystemOne REST docker</name>
 
 	<properties>
-		<cora-docker-tomcat.version>2.4.0</cora-docker-tomcat.version>
+		<cora-docker-tomcat.version>2.5.0</cora-docker-tomcat.version>
 		<systemone.version>8.21-SNAPSHOT</systemone.version>
 		<!-- Override property so docker-build profile activates in this module -->
 		<docker.build.activate>true</docker.build.activate>
@@ -80,6 +80,32 @@
 							<overWriteReleases>true</overWriteReleases>
 							<overWriteSnapshots>true</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>${exec-maven-plugin.version}</version>
+				<executions>
+					<execution>
+						<id>docker-build</id>
+						<phase>install</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>docker</executable>
+							<workingDirectory>${outputDirectory}</workingDirectory>
+							<arguments>
+								<argument>build</argument>
+								<argument>-t</argument>
+								<argument>${dockerNameAndVersion}</argument>
+								<argument>--build-arg</argument>
+								<argument>CORA_DOCKER_VERSION=${cora-docker-tomcat.version}</argument>
+								<argument>.</argument>
+							</arguments>
 						</configuration>
 					</execution>
 				</executions>
