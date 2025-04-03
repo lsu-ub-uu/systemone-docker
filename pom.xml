@@ -34,7 +34,7 @@
 
 	<properties>
 		<cora-docker-tomcat.version>2.5.0</cora-docker-tomcat.version>
-		<systemone.version>8.22-SNAPSHOT</systemone.version>
+		<systemone.version>8.25-SNAPSHOT</systemone.version>
 		<!-- Override property so docker-build profile activates in this module -->
 		<docker.build.activate>true</docker.build.activate>
 	</properties>
