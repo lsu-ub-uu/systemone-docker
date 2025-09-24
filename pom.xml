@@ -27,7 +27,7 @@
 
 	<artifactId>systemone-docker</artifactId>
 	<packaging>pom</packaging>
-	<version>1.10.0</version>
+	<version>1.10.1-SNAPSHOT</version>
 	<name>SystemOne REST docker</name>
 
 	<properties>
@@ -41,7 +41,7 @@
 		<connection>scm:git:https://github.com/lsu-ub-uu/systemone-docker.git</connection>
 		<developerConnection>scm:git:https://github.com/lsu-ub-uu/systemone-docker.git</developerConnection>
 		<url>https://github.com/lsu-ub-uu/systemone-docker.git</url>
-	  <tag>systemone-docker-1.10.0</tag>
+	  <tag>release/1.10</tag>
   </scm>
 
 	<dependencies>
