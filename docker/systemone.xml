@@ -20,6 +20,8 @@
 		url="jdbc:postgresql://systemone-postgresql:5432/systemone" username="systemone"
 		password="systemone" maxTotal="20000" maxIdle="10" maxWaitMillis="-1" />
 
+	<Parameter name="doNotCache" value="false" override="false" />
+
 	<Parameter name="solrURL" value="http://solr:8983/solr/coracore" override="false" />
 
 	<Parameter name="fedoraArchiveURL" value="http://systemone-fedora:8080/fcrepo/rest/"
